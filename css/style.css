@@ -1747,7 +1747,7 @@ header .menu__link:hover {
 }
 
 @media (max-width: 767.98px) {
-  .tools__button {
+  .help__button {
     width: 100%;
   }
   .help__body {
