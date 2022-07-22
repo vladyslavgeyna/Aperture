@@ -1249,6 +1249,7 @@ header .menu__link:hover {
 .footer__main__form-body {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     background: #F9FAFB;
     border: 1px solid #E5E7EB;
     border-radius: 12px;
@@ -1293,6 +1294,7 @@ header .menu__link:hover {
         padding: 8px 11px;
     }
     .footer__main__form-body {
+        column-gap: 0;
         padding: 5px;
     }
     .footer__main__content {
