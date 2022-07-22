@@ -2059,7 +2059,15 @@ header .menu__link:hover {
     margin-bottom: 10px;
   }
   .footer__main__form_input {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 75%;
+            flex: 0 1 75%;
     padding: 10px 12px;
+  }
+  .footer__main__form_button {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 25%;
+            flex: 0 1 25%;
   }
   .footer__main__form_button {
     padding: 8px 11px;

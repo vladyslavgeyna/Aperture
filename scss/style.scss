@@ -1289,7 +1289,11 @@ header .menu__link:hover {
         margin-bottom: 10px;
     }
     .footer__main__form_input {
+        flex: 0 1 75%;
         padding: 10px 12px;
+    }
+    .footer__main__form_button {
+        flex: 0 1 25%;
     }
     .footer__main__form_button {
         padding: 8px 11px;
