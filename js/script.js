@@ -52,4 +52,15 @@ if(animItems.length > 0) {
       animOnScroll();
   }, 150)
 }
-
+let header = document.querySelector(".header");
+window.addEventListener("scroll", headerScrolled);
+document.addEventListener("DOMContentLoaded", headerScrolled);
+function headerScrolled() {
+  let scrollPosition = window.scrollY;
+  if(scrollPosition > 0) {
+    header.classList.add("_scroll");
+  }
+  else {
+    header.classList.remove("_scroll");
+  }
+}
