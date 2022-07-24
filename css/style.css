@@ -378,18 +378,12 @@ header .menu__link:hover {
 }
 
 .main-block {
-  padding-top: 475px;
+  padding-top: 30%;
   padding-bottom: 40px;
   padding-left: 40px;
   padding-right: 40px;
   min-height: 100vh;
   background: url("../images/main-block/image.jpg") center/cover no-repeat;
-}
-
-@media (max-width: 1168px) {
-  .main-block {
-    padding-top: calc(180px + 295 * ((100vw - 320px) / 848));
-  }
 }
 
 @media (max-width: 1024px) {
@@ -428,6 +422,12 @@ header .menu__link:hover {
           transform: translate(0, 100%);
   -webkit-transition: all 1s ease 0.9s;
   transition: all 1s ease 0.9s;
+}
+
+@media (max-width: 550px) {
+  .main-block__subtitle h2 {
+    color: #fff;
+  }
 }
 
 .main-block__subtitle._active h2 {
@@ -540,8 +540,14 @@ header .menu__link:hover {
 }
 
 .main-block__parameter_name {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 100%;
+}
+
+@media (max-width: 1168px) {
+  .main-block__parameter_name {
+    font-size: calc(12px + 2 * ((100vw - 320px) / 848));
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -875,7 +881,7 @@ header .menu__link:hover {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   text-align: start;
-  max-width: 450px;
+  max-width: 500px;
 }
 
 .sunset__subtitle {
@@ -973,8 +979,14 @@ header .menu__link:hover {
 }
 
 .sunset__parameter_name {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 100%;
+}
+
+@media (max-width: 1168px) {
+  .sunset__parameter_name {
+    font-size: calc(12px + 2 * ((100vw - 320px) / 848));
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -1190,8 +1202,14 @@ header .menu__link:hover {
 }
 
 .tools__body_image__parameter_name {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 100%;
+}
+
+@media (max-width: 1168px) {
+  .tools__body_image__parameter_name {
+    font-size: calc(12px + 2 * ((100vw - 320px) / 848));
+  }
 }
 
 .tools__body_image__parameters._active .tools__body_image__parameter {
@@ -1283,7 +1301,7 @@ header .menu__link:hover {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   text-align: start;
-  max-width: 450px;
+  max-width: 500px;
 }
 
 .leafs__subtitle {
@@ -1381,8 +1399,14 @@ header .menu__link:hover {
 }
 
 .leafs__parameter_name {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 100%;
+}
+
+@media (max-width: 1168px) {
+  .leafs__parameter_name {
+    font-size: calc(12px + 2 * ((100vw - 320px) / 848));
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -1565,7 +1589,7 @@ header .menu__link:hover {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   text-align: start;
-  max-width: 450px;
+  max-width: 500px;
 }
 
 .starfall__subtitle {
@@ -1663,8 +1687,14 @@ header .menu__link:hover {
 }
 
 .starfall__parameter_name {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 100%;
+}
+
+@media (max-width: 1168px) {
+  .starfall__parameter_name {
+    font-size: calc(12px + 2 * ((100vw - 320px) / 848));
+  }
 }
 
 @media (max-width: 767.98px) {

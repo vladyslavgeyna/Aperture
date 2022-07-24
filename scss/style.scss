@@ -273,7 +273,7 @@ header .menu__link:hover {
 }
 //========================================================================
 .main-block {
-    @include adaptiveValue("padding-top", 475, 180, 1);
+    padding-top: 30%;
     padding-bottom: 40px;
     padding-left: 40px;
     padding-right: 40px;
@@ -298,6 +298,9 @@ header .menu__link:hover {
 }
 .main-block__subtitle h2 {
     color: $textAboutWhiteColor;
+    @media (max-width: 550px) {
+        color: #fff;
+    }
     font-size: 14px;
     line-height: 143%;
     text-align: center;
@@ -374,7 +377,7 @@ header .menu__link:hover {
     transform: translate(0, 0);
 }
 .main-block__parameter_name {
-    font-size: 12px;
+    @include adaptiveValue("font-size", 14, 12, 1);
     line-height: 100%;
 }
 @media (max-width: 767.98px) {
@@ -564,7 +567,7 @@ header .menu__link:hover {
 .sunset__body_content {
     flex: 1 1 auto;
     text-align: start;
-    max-width: 450px;
+    max-width: 500px;
 }
 .sunset__subtitle {
     overflow: hidden;
@@ -623,7 +626,7 @@ header .menu__link:hover {
     transform: translate(0, 0);
 }
 .sunset__parameter_name {
-    font-size: 12px;
+    @include adaptiveValue("font-size", 14, 12, 1);
     line-height: 100%;
 }
 @media (max-width: 767.98px) {
@@ -766,7 +769,7 @@ header .menu__link:hover {
 
 }
 .tools__body_image__parameter_name {
-    font-size: 12px;
+    @include adaptiveValue("font-size", 14, 12, 1);
     line-height: 100%;
 }
 
@@ -824,7 +827,7 @@ header .menu__link:hover {
 .leafs__body_content {
     flex: 1 1 auto;
     text-align: start;
-    max-width: 450px;
+    max-width: 500px;
 }
 .leafs__subtitle {
     overflow: hidden;
@@ -883,7 +886,7 @@ header .menu__link:hover {
     transform: translate(0, 0);
 }
 .leafs__parameter_name {
-    font-size: 12px;
+    @include adaptiveValue("font-size", 14, 12, 1);
     line-height: 100%;
 }
 @media (max-width: 767.98px) {
@@ -988,7 +991,7 @@ header .menu__link:hover {
 .starfall__body_content {
     flex: 1 1 auto;
     text-align: start;
-    max-width: 450px;
+    max-width: 500px;
 }
 .starfall__subtitle {
     overflow: hidden;
@@ -1047,7 +1050,7 @@ header .menu__link:hover {
     transform: translate(0, 0);
 }
 .starfall__parameter_name {
-    font-size: 12px;
+    @include adaptiveValue("font-size", 14, 12, 1);
     line-height: 100%;
 }
 @media (max-width: 767.98px) {
