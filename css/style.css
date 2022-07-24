@@ -388,7 +388,7 @@ header .menu__link:hover {
 
 @media (max-width: 1024px) {
   .main-block {
-    padding-top: 40%;
+    padding-top: 35%;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 15px;
@@ -404,7 +404,7 @@ header .menu__link:hover {
   }
 }
 
-@media (max-width: 425.98px) {
+@media (max-width: 500px) {
   .main-block {
     padding-top: 70%;
   }
