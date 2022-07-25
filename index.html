@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -248,22 +249,36 @@
                                 <p>Trusted by your favourite companies</p>
                             </div>
                         </div>
-                        <div class="clients__images">
-                            <div class="clients__image">
-                                <img src="images/clients/01.svg" alt="Client">
+                        <div class="clients__swiper swiper">
+                            <div class="clients__swiper_wrapper swiper-wrapper">
+                                <div class="clients__swiper_slide swiper-slide">
+                                    <div class="clients__image">
+                                        <img src="images/clients/01.svg" alt="Client">
+                                    </div>
+                                </div>
+                                <div class="clients__swiper_slide swiper-slide">
+                                    <div class="clients__image">
+                                        <img src="images/clients/02.svg" alt="Client">
+                                    </div>
+                                </div>
+                                <div class="clients__swiper_slide swiper-slide">
+                                    <div class="clients__image">
+                                        <img src="images/clients/03.svg" alt="Client">
+                                    </div> 
+                                </div>
+                                <div class="clients__swiper_slide swiper-slide">
+                                    <div class="clients__image">
+                                        <img src="images/clients/04.svg" alt="Client">
+                                    </div>
+                                </div>
+                                <div class="clients__swiper_slide swiper-slide">
+                                    <div class="clients__image">
+                                        <img src="images/clients/05.svg" alt="Client">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="clients__image">
-                                <img src="images/clients/02.svg" alt="Client">
-                            </div>
-                            <div class="clients__image">
-                                <img src="images/clients/03.svg" alt="Client">
-                            </div>
-                            <div class="clients__image">
-                                <img src="images/clients/04.svg" alt="Client">
-                            </div>
-                            <div class="clients__image">
-                                <img src="images/clients/05.svg" alt="Client">
-                            </div>
+                            <div class="clients__swiper_pagination swiper-pagination"></div>
+
                         </div>
                     </div>
                 </div>
@@ -375,6 +390,7 @@
             </div>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

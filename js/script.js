@@ -235,7 +235,53 @@ let _slideToggle = (target, duration = 500) => {
         return _slideUp(target, duration);
     }
 }
+//this is for swiper
 
+
+
+const clientsSwiper = document.querySelector('.clients__swiper');
+if(clientsSwiper) {
+    const swiper = new Swiper('.clients__swiper', {
+      autoplay: {
+        delay: 250,
+      },
+      breakpoints: {
+        320: {
+          slidesPerView:1,
+        },
+        500: {
+            slidesPerView:2,
+        },
+        767.98: {
+            slidesPerView:3,
+        },
+        1024: {
+            slidesPerView:4,
+        },
+        1440: {
+            slidesPerView:5,
+        },
+      },
+      speed:1000,
+      disableOnInteraction: false,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+    });
+    let sliderBlock = document.querySelector(".clients__swiper");
+    if(sliderBlock) {
+        sliderBlock.addEventListener("mouseleave", function (e) {
+            swiper.params.autoplay.disableOnInteraction = false;
+            swiper.params.autoplay.delay = 250;
+            swiper.autoplay.start();
+        });
+        sliderBlock.addEventListener("mouseenter", function (e) {
+            swiper.autoplay.stop();
+        });
+    }
+}
 
 
 
