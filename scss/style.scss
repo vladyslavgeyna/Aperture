@@ -1198,10 +1198,18 @@ header .menu__link:hover {
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 10px;
+    @media (max-width: 767.98px) {
+        margin-bottom: 12px;
+    }
+    position: relative;
+    display: inline-block;
 }
 .footer__top_item {
     &:not(:last-child) {
         margin-bottom: 10px;
+        @media (max-width: 767.98px) {
+            margin-bottom: 12px;
+        }
     }
 }
 .footer__top_link {
@@ -1241,7 +1249,46 @@ header .menu__link:hover {
         font-size: 16px;
     }
 }
-@media (max-width: 425.98px) {
+
+//=====================================================================================================
+.footer__top_nav._init .footer__top_menu_label {
+    transition: all 0.5s ease 0s;
+    cursor: pointer;
+}
+.footer__top_nav._init .footer__top_menu_label._active {
+    color: #fff;
+}
+.footer__top_nav._init .footer__top_menu_label::after, 
+.footer__top_nav._init .footer__top_menu_label::before {
+    content: "";
+    width: 12px;
+    height: 2.5px;
+    background-color: $textAboutWhiteColor;
+    position: absolute;
+    top: 10px;
+    transition: all 0.5s ease 0s;
+    border-radius: 5px;
+}
+.footer__top_nav._init .footer__top_menu_label::before {
+    transform: rotate(-40deg);
+    right: -23px;  
+}
+.footer__top_nav._init .footer__top_menu_label::after {
+    transform: rotate(40deg);
+    right: -31px;
+}
+.footer__top_nav._init .footer__top_menu_label._active::after, 
+.footer__top_nav._init .footer__top_menu_label._active::before {
+    background-color: #fff;
+}
+.footer__top_nav._init .footer__top_menu_label._active::before {
+    transform: rotate(40deg);
+}
+.footer__top_nav._init .footer__top_menu_label._active::after {
+    transform: rotate(-40deg);
+}
+//=====================================================================================================
+@media (max-width: 550px) {
     .footer__top_nav {
         justify-content: center;
         align-items: center;
